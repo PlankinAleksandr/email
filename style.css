@@ -1,0 +1,54 @@
+body, html {    margin: 0px;
+    padding: 0px;    overflow-x: hidden;
+}
+body {
+    background: linear-gradient(deepskyblue, blue);}
+
+.accordion {    background-color: #6495ED;
+    color: #444;    cursor: pointer;
+    padding: 18px;    width: 100%;
+    border: solid black 2px;    text-align: left;
+    outline: none;    font-size: 30px;
+    transition: 0.4s;    margin-bottom: 5px;
+}
+.active, .accordion:hover {        background-color: #5492ED;
+}
+.accordion:after {
+    content: '\002B';    color: #777;
+    font-weight: bold;    float: right;
+    margin-left: 5px;}
+.active:after {
+    content: "\2212";}
+.panel {
+    height: 1550px;    max-height: 0;
+    overflow: hidden;    transition: max-height 0.2s ease-out;
+}
+#shapka {    border-radius: 100px;
+    border: solid black;    display: flex;
+    text-shadow: 1px 1px 1px #000;    justify-content: center;
+    align-items: center;    font-size: 100px;
+    color: white;    background-color: #6495ED;
+    height: 200px;    width: 95%;
+    margin: 20px auto 20px auto;}
+#pretext {
+    color: white;    text-shadow: 1px 1px 1px #000;
+    width: 70%;    text-align: center;
+    font-size: 30px;    padding: 100px 30px 0px 30px;
+}
+#flex1 {    display: flex;
+}
+#flex1 > img {        margin: 20px auto 20px auto;
+}
+#flex2 {    display: flex;
+}
+#flex2 > img {
+    margin: 20px auto 20px auto;}
+#flex3 {
+    display: flex;}
+#flex3 > img {
+    margin: 20px auto 20px auto;}
+#flex4 {
+    display: flex;}
+#flex4 > img {
+    margin: 20px auto 20px auto;}
+

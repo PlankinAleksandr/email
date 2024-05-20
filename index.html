@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title> Музей мемов </title>
+</head>
+<body>
+<div id="shapka">
+    Интерактивный музей мемов «Большая Ржака»
+</div>
+
+<div style="display:flex; margin: 2.5%;">
+    <div id="pretext">
+        <h1>
+            Приветствуем всех любителей высокого юмора!
+        </h1>
+
+        <p>
+            В нашем интерактивном музее собраны лучшие образцы мемов со всего интернета. Вы можете смотреть их абсолютно бесплатно без SMS и регистраци,
+            а также пополнять нашу коллекцию, предлагая свои мемы через специальную форму.
+        </p>
+
+        <h2>
+            Сохраним историю интернет-приколов вместе!
+        </h2>
+    </div>
+
+
+    <img src="images/glav_mem.jpg" height="600" width=572" style="width:30%" />
+
+</div>
+
+
+<button class="accordion">
+    Демотиваторы
+</button>
+
+<div class="panel">
+
+    <div id="flex1">
+
+        <img src="images/demotivator1.png" height="600" width=572" />
+        <img src="images/demotivator2.png" height="600" width=572" />
+        <img src="images/demotivator3.jpg" height="600" width=572" />
+        <img src="images/demotivator4.jpg" height="600" width=572" />
+
+    </div>
+
+</div>
+
+<button class="accordion">
+    Игры
+</button>
+
+<div class="panel">
+
+    <div id="flex2">
+
+        <img src="images/games1.jpg" height="300" width=1572" />
+
+    </div>
+
+    <div id="flex3">
+
+        <img src="images/games2.jpg" height="600" width=572" />
+        <img src="images/games3.png" height="600" width=572" />
+        <img src="images/games4.jfif" height="600" width=572" />
+
+    </div>
+
+</div>
+
+<button class="accordion">
+    Постирония
+</button>
+
+<div class="panel">
+
+    <div id="flex4">
+
+        <img src="images/postironia1.jpg" height="600" width=572" />
+        <img src="images/postironia2.png" height="600" width=572" />
+        <img src="images/postironia3.jpg" height="600" width=572" />
+        <img src="images/postironia4.jpg" height="600" width=572" />
+
+    </div>
+</div>
+
+<script src="accardion.js"></script>
+<form enctype="multipart/form-data" method="post" id="form" onsubmit="submitForm(event)" action="send.php" style="color: white; margin: 30px 0 0 20px">
+    Вы можете прислать нам свои мемы для следующей подборки!
+        <p>Имя</p>
+        <input placeholder="Представьтесь" name="name" type="text" >
+        <p>Email</p>
+        <input placeholder="Укажите почту" name="email" type="text" >
+        <p>Сообщение</p>
+        <textarea name="text"></textarea>
+        <p>Прикрепить файлы</p>
+        <input type="file" name="myfile[]" multiple id="myfile">
+        <p><input value="Отправить" type="submit"></p>
+    </form>
+<script src="email.js" ></script>
+</body>
+</html>
